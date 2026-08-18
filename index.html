@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Avodart Studio — Wedding Photography. Elegant wedding stories, portraits and unforgettable moments.">
+  <title>Avodart Studio | Wedding Photography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home">AVODART <span>STUDIO</span></a>
+    <button class="menu" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">WEDDING PHOTOGRAPHY</p>
+        <h1>Your love story,<br><em>beautifully remembered.</em></h1>
+        <p class="hero-text">Timeless wedding photographs for couples who want their real moments captured with elegance and emotion.</p>
+        <div class="actions">
+          <a class="btn" href="#booking">Book Your Date</a>
+          <a class="text-link" href="#gallery">View Gallery →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Wedding Stories</h2>
+        </div>
+        <p>New photographs can be added anytime by uploading them to the <strong>assets</strong> folder in GitHub.</p>
+      </div>
+
+      <div class="gallery">
+        <figure><img src="assets/photo-01.jpg" alt="Wedding portrait" loading="lazy"><figcaption>THE COUPLE</figcaption></figure>
+        <figure><img src="assets/photo-02.jpg" alt="Wedding ceremony" loading="lazy"><figcaption>THE CEREMONY</figcaption></figure>
+        <figure><img src="assets/photo-03.jpg" alt="Bride portrait" loading="lazy"><figcaption>THE BRIDE</figcaption></figure>
+        <figure><img src="assets/photo-04.jpg" alt="Groom portrait" loading="lazy"><figcaption>THE GROOM</figcaption></figure>
+        <figure><img src="assets/photo-05.jpg" alt="Wedding details" loading="lazy"><figcaption>DETAILS</figcaption></figure>
+        <figure><img src="assets/photo-06.jpg" alt="Wedding celebration" loading="lazy"><figcaption>THE CELEBRATION</figcaption></figure>
+        <figure><img src="assets/photo-07.jpg" alt="Wedding moment" loading="lazy"><figcaption>THE MOMENT</figcaption></figure>
+        <figure><img src="assets/photo-08.jpg" alt="Wedding reception" loading="lazy"><figcaption>RECEPTION</figcaption></figure>
+        <figure><img src="assets/photo-09.jpg" alt="Wedding couple" loading="lazy"><figcaption>FOREVER</figcaption></figure>
+      </div>
+      <p class="gallery-note">Tip: replace the sample filenames with your own photos, or add more image cards in <code>index.html</code>.</p>
+    </section>
+
+    <section id="about" class="split section">
+      <div>
+        <p class="eyebrow">ABOUT AVODART STUDIO</p>
+        <h2>Elegant images.<br>Authentic emotions.</h2>
+      </div>
+      <div>
+        <p>Avodart Studio captures weddings with a refined, magazine-inspired style while keeping the genuine emotion of the day at the centre.</p>
+        <p>From preparations and portraits to the ceremony and reception, every chapter is documented with care.</p>
+      </div>
+    </section>
+
+    <section id="booking" class="booking section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">LET'S CREATE</p>
+          <h2>Wedding Booking</h2>
+        </div>
+        <p>Send your wedding details and Avodart Studio can get back to you about availability and packages.</p>
+      </div>
+
+      <form name="wedding-booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="booking-form">
+        <input type="hidden" name="form-name" value="wedding-booking">
+        <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <label>Full Name<input type="text" name="name" required placeholder="Your name"></label>
+        <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
+        <label>WhatsApp Number<input type="tel" name="whatsapp" required placeholder="+234 ..."></label>
+        <label>Wedding Date<input type="date" name="wedding-date" required></label>
+        <label>Wedding Location<input type="text" name="location" placeholder="Venue / City"></label>
+        <label>Service
+          <select name="service">
+            <option>Wedding Photography</option>
+            <option>Wedding Photography + Pre-Wedding</option>
+            <option>Full Wedding Package</option>
+            <option>Custom Package</option>
+          </select>
+        </label>
+        <label class="full">Tell us about your wedding<textarea name="message" rows="5" placeholder="Tell us what you are planning..."></textarea></label>
+        <button class="btn" type="submit">Send Booking Request</button>
+      </form>
+      <p class="form-note">The form is configured for Netlify Forms, so submissions can be received from the Netlify dashboard after deployment.</p>
+    </section>
+
+    <section id="contact" class="contact section">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Let's talk about your day.</h2>
+      <div class="contact-grid">
+        <a href="https://wa.me/2340000000000" target="_blank" rel="noopener">
+          <span>WHATSAPP</span><strong>+234 000 000 0000</strong>
+        </a>
+        <a href="https://instagram.com/avodartstudio" target="_blank" rel="noopener">
+          <span>INSTAGRAM</span><strong>@avodartstudio</strong>
+        </a>
+        <a href="mailto:hello@avodartstudio.com">
+          <span>EMAIL</span><strong>hello@avodartstudio.com</strong>
+        </a>
+      </div>
+      <p class="replace-note">Before publishing, replace the sample WhatsApp number, Instagram username and email above with your real contact details.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Avodart Studio</span>
+    <span>Wedding Photography</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
